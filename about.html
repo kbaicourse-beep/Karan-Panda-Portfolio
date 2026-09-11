@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Karan Panda</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+
+<header class="nav" id="site-nav"></header>
+
+<main>
+  <section class="wrap about-hero page-top-grid">
+    <div>
+      <span class="eyebrow" id="about-eyebrow"></span>
+      <h1 id="about-heading"></h1>
+      <p class="muted" id="about-sub"></p>
+      <a class="btn mt-40" id="resume-btn" href="#" target="_blank">Download Resume ↗</a>
+    </div>
+    <div class="portrait"><img id="about-portrait" src="" alt="Karan Panda"></div>
+  </section>
+
+  <section class="about-intro wrap reveal">
+    <p class="about-hook" id="about-hook"></p>
+    <div class="about-intro-body">
+      <span class="eyebrow" id="about-intro-eyebrow"></span>
+      <p id="about-intro-text"></p>
+    </div>
+  </section>
+
+  <section class="about-block about-block-split wrap reveal">
+    <div class="about-block-text">
+      <h2 id="lift-heading"></h2>
+      <p class="sub" id="lift-body"></p>
+    </div>
+    <div class="lift-media"><img id="lift-image" src="" alt="" loading="lazy"></div>
+  </section>
+
+  <section class="about-block wrap reveal">
+    <span class="eyebrow" id="games-eyebrow"></span>
+    <h2 id="games-heading"></h2>
+    <p class="sub" id="games-body"></p>
+    <div class="games-layout">
+      <div>
+        <div class="eyebrow" style="font-size:11px;">Most played on mobile</div>
+        <div id="mobile-games"></div>
+      </div>
+      <div id="favorite-games" style="display:contents;"></div>
+    </div>
+  </section>
+
+  <section class="about-block wrap reveal">
+    <span class="eyebrow" id="art-eyebrow"></span>
+    <h2 id="art-heading"></h2>
+    <p class="sub" id="art-body"></p>
+    <div class="art-masonry" id="art-masonry"></div>
+  </section>
+
+  <section class="about-block wrap reveal">
+    <span class="eyebrow" id="honors-eyebrow"></span>
+    <h2 id="honors-heading" style="margin-bottom:40px;"></h2>
+    <div class="honors-list" id="honors-list"></div>
+  </section>
+
+  <section class="resume-cta wrap">
+    <p id="resume-cta-text"></p>
+    <a class="btn" id="resume-cta-btn" href="#" target="_blank"></a>
+  </section>
+</main>
+
+<footer class="footer" id="site-footer"></footer>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/about.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("resume-cta-btn").href = SITE.resumeFile;
+  });
+</script>
+</body>
+</html>
